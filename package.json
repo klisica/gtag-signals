@@ -1,0 +1,28 @@
+{
+  "name": "gtag-signals",
+  "description": "Send user consent signals with Google's consent mode API",
+  "version": "1.0.0",
+  "author": "klisica",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/klisica/gtag-signals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klisica/gtag-signals/issues"
+  },
+  "homepage": "https://github.com/klisica/gtag-signals#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
